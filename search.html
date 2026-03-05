@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Search Bus</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <div class="container search-box">
+    <h2>Search Bus</h2>
+
+    <nav>
+      <a href="index.html">Home</a> |
+      <a href="login.html">Login</a> |
+      <a href="user.html">Dashboard</a>
+    </nav>
+
+    <input id="source" type="text" placeholder="Enter Source">
+    <button id="getLocation" class="secondary-btn">📍 Use Current Location</button>
+
+    <input id="destination" type="text" placeholder="Enter Destination">
+    <button id="searchBus" class="primary-btn">Search Buses</button>
+
+    <div id="loading" class="loading" style="display:none">Searching...</div>
+
+    <table id="busTable" style="display:none">
+      <thead>
+        <tr>
+          <th>Bus No</th>
+          <th>Type</th>
+          <th>Source</th>
+          <th>Destination</th>
+          <th>Contact</th>
+        </tr>
+      </thead>
+      <tbody id="busBody"></tbody>
+    </table>
+  </div>
+
+  <script type="module" src="search.js"></script>
+</body>
+</html>

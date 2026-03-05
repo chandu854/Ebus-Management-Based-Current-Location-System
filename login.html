@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Login</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+
+  <header class="header">
+    <h1>🚌 E-Bus</h1>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="register.html">Register</a>
+    </nav>
+  </header>
+
+  <main class="auth-container">
+    <div class="auth-card">
+      <h2>Welcome Back</h2>
+      <p>Login to continue</p>
+
+      <form class="auth-form">
+        <input id="email" type="email" placeholder="Email" required />
+        <input id="password" type="password" placeholder="Password" required />
+        <button id="loginBtn" type="submit">Login</button>
+      </form>
+    </div>
+  </main>
+
+  <script type="module">
+    import { loginUser } from "auth.js";
+    document.querySelector(".auth-form").onsubmit = (e) => {
+      e.preventDefault();
+      loginUser(email.value, password.value);
+    };
+  </script>
+
+</body>
+</html>
+ 

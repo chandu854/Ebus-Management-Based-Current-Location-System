@@ -1,0 +1,291 @@
+/* ================= RESET ================= */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* ================= BODY ================= */
+body {
+  min-height: 100vh;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  font-family: "Segoe UI", Tahoma, sans-serif;
+  color: #fff;
+  text-align: center;
+}
+
+/* ================= HEADER ================= */
+.header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px 40px;
+}
+
+.header h1 {
+  font-size: 22px;
+}
+
+.header nav a {
+  color: #fff;
+  text-decoration: none;
+  margin-left: 20px;
+  font-weight: 600;
+}
+
+.header nav a:hover {
+  text-decoration: underline;
+}
+
+/* ================= HOME PAGE ================= */
+.hero {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.hero h2 {
+  font-size: 38px;
+  margin-bottom: 12px;
+}
+
+.hero p {
+  max-width: 500px;
+  font-size: 17px;
+  line-height: 1.6;
+  margin-bottom: 30px;
+}
+
+.buttons {
+  display: flex;
+  gap: 15px;
+}
+
+.btn {
+  padding: 12px 28px;
+  border-radius: 30px;
+  font-weight: 700;
+  text-decoration: none;
+  transition: 0.3s;
+}
+
+.btn.primary {
+  background: #fff;
+  color: #5a67d8;
+}
+
+.btn.primary:hover {
+  transform: translateY(-2px);
+}
+
+.btn.outline {
+  border: 2px solid #fff;
+  color: #fff;
+}
+
+.btn.outline:hover {
+  background: #fff;
+  color: #5a67d8;
+}
+
+/* ================= LOGIN & REGISTER ================= */
+.auth-container {
+  min-height: calc(100vh - 80px);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.auth-card {
+  width: 360px;
+  background: #ffffff;
+  color: #333;
+  padding: 32px 28px;
+  border-radius: 18px;
+  box-shadow: 0 18px 40px rgba(0, 0, 0, 0.25);
+  text-align: center;
+}
+
+.auth-card h2 {
+  font-size: 26px;
+  margin-bottom: 6px;
+}
+
+.auth-card p {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 20px;
+}
+
+/* ================= FORMS ================= */
+.auth-form {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.auth-form input,
+.auth-form select {
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #ddd;
+  font-size: 15px;
+  transition: 0.3s;
+}
+
+.auth-form input:focus,
+.auth-form select:focus {
+  outline: none;
+  border-color: #667eea;
+  box-shadow: 0 0 0 3px rgba(102, 126, 234, 0.25);
+}
+
+/* ================= AUTH BUTTON ================= */
+.auth-form button {
+  margin-top: 6px;
+  padding: 12px;
+  border-radius: 8px;
+  border: none;
+  background: linear-gradient(135deg, #667eea, #764ba2);
+  color: white;
+  font-size: 16px;
+  font-weight: 700;
+  cursor: pointer;
+  transition: 0.25s;
+}
+
+.auth-form button:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.25);
+}
+
+.auth-form button:active {
+  transform: scale(0.97);
+}
+
+/* ================= SEARCH PAGE ONLY ================= */
+.search-box {
+   max-width: 420px;
+  margin: auto;
+  background: white;
+  color: #333;
+  padding: 28px 24px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0,0,0,0.25);
+  margin-top: 200px;
+  text-align: center;
+}
+
+.search-box h2 {
+  margin-bottom: 10px;
+  font-size: 24px;
+  text-align: center;
+
+ 
+}
+
+.search-box nav {
+  margin-bottom: 16px;
+  font-size: 14px;
+  text-align: center;
+}
+
+.search-box input {
+  width: 100%;
+  padding: 11px 12px;
+  border-radius: 6px;
+  border: 1px solid #ccc;
+  margin-bottom: 12px;
+  font-size: 15px;
+  text-align: center;
+}
+
+.search-box input:focus {
+  border-color: #4facfe;
+  outline: none;
+  box-shadow: 0 0 5px rgba(79, 172, 254, 0.4);
+ 
+}
+
+/* Buttons */
+.primary-btn {
+  width: 100%;
+  background: linear-gradient(135deg, #4facfe, #00c6ff);
+  color: white;
+  border: none;
+  padding: 11px;
+  border-radius: 6px;
+  font-size: 15px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 6px;
+ 
+}
+
+.primary-btn:hover {
+  opacity: 0.9;
+}
+
+.secondary-btn {
+  width: 100%;
+  background: #f1f5f9;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 6px;
+  font-size: 14px;
+  cursor: pointer;
+  margin-bottom: 12px;
+}
+
+.secondary-btn:hover {
+  background: #e5e7eb;
+}
+
+.loading {
+  margin: 12px 0;
+  font-weight: 600;
+  color: #007bff;
+}
+
+/* Results table */
+.search-box table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 12px;
+  font-size: 14px;
+}
+
+.search-box th {
+  background: #4facfe;
+  color: white;
+  padding: 8px;
+}
+
+.search-box td {
+  padding: 8px;
+  border-bottom: 1px solid #ddd;
+}
+
+.search-box tr:hover {
+  background: #f5f9ff;
+}
+
+/* ================= MOBILE ================= */
+@media (max-width: 600px) {
+  .header {
+    flex-direction: column;
+    gap: 10px;
+  }
+
+  .auth-card {
+    width: 90%;
+  }
+
+  .hero h2 {
+    font-size: 30px;
+  }
+}
